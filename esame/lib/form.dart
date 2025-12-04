@@ -37,8 +37,12 @@ class _AddReviewFormDialogState extends State<AddReviewFormDialog> {
 
   @override
   void dispose() {
-    _form.dispose();
+    _cleanup();
     super.dispose();
+  }
+
+  void _cleanup() {
+    _form.dispose();
   }
 
   @override
