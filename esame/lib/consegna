@@ -1,0 +1,11 @@
+Descrizione del progetto: Un'app per pubblicare recensioni per ristoranti locali. La schermata iniziale elenca tutte le recensioni e un pulsante "+" in basso a destra apre un modulo per aggiungerne una nuova. Possiamo sempre modificare le recensioni esistenti toccando l'icona di modifica accanto a esse.
+
+Nota importante: questo esercizio si concentra sulla gestione dello stato locale tramite StatefulWidget; per aiutarti, non richiediamo alcuna soluzione di gestione dello stato globale (Riverpod). Sei libero di scegliere di utilizzarla, ma non è obbligatoria.
+
+Requisiti tecnici di base:
+
+Scrivi la classe che rappresenta una recensione (con i campi titolo, commento e valutazione); una valutazione è un numero intero da 1 a 5. Il commento è facoltativo. Scrivi due widget: la schermata iniziale (elenco delle recensioni) e il modulo widget "modifica" (utilizzato per aggiungere o modificare una recensione).
+La ​​schermata iniziale è uno StatefulWidget che contiene un elenco di recensioni nel suo stato locale (oppure, scrivi un notificatore e usa Riverpod, se preferisci).
+La ​​schermata del modulo usa reactive_forms per creare un modulo per creare una nuova recensione.
+Come sempre, la schermata del modulo si apre con una Map<String, Object?> contenente i dati del modulo convalidati.
+Utilizza la stessa schermata del modulo per modificare una recensione esistente, accettando un oggetto recensione facoltativo per precompilare i campi del modulo.
